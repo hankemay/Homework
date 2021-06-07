@@ -1,0 +1,10 @@
+#秒杀系统设计
+
+##设计目标
+* 高可用
+* 高性能
+* 瞬间高并发
+* 可扩展
+
+##架构
+![Seckill_Arch](resources/Seckill_Service_Arch.png)

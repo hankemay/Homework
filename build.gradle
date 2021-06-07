@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'scala'
+}
+
+group 'com.hanke.code'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    scalaVersion = '2.11'
+    sparkVersion = '2.4.2'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.scala-lang', name: 'scala-library', version: "${scalaVersion}.8"
+//    compile group: 'org.apache.spark', name: "spark-core_${scalaVersion}", version: "${sparkVersion}"
+//    compile group: 'org.apache.spark', name: "spark-streaming_${scalaVersion}", version: "${sparkVersion}"
+//    compile group: 'org.apache.spark', name: "spark-sql_${scalaVersion}", version: "${sparkVersion}"
+//    compile group: 'com.swoop', name: 'spark-alchemy_2.11', version: '0.5.5'
+//    compile group: 'io.airlift', name: 'stats', version: '0.183'
+    testCompile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.2.0-SNAP10'
+    testCompile group: 'org.scalacheck', name: 'scalacheck_2.11', version: '1.14.0'
+//    compile group: 'io.gatling', name: 'gatling-core', version: '2.1.7'
+//    compile group: 'io.gatling', name: 'gatling-http', version: '2.1.7'
+
+}

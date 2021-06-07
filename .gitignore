@@ -1,0 +1,8 @@
+*.gradlew/
+gradlew
+*.gradle/
+gradle/
+gradlew.bat
+.idea/
+out/
+
